@@ -14,7 +14,8 @@
       "types"
     ],
     "types": [
-      "Phaser"
+      "Phaser",
+      "phaser3-align-plugin"
     ]
   },
   "includes": [

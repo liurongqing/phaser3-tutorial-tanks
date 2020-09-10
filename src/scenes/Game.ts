@@ -4,14 +4,30 @@ export default class Game extends Phaser.Scene {
   constructor() {
     super(SceneKeys.GAME)
   }
-  preload() { }
-  create() {
-    const { width, height } = this.scale
-    this.add.image(width * 0.5, height * 0.5, 'bg')
 
-    this.add.text(width * 0.5, height * 0.5, 'Game.ts', {
-      fontSize: '38px'
-    }).setOrigin(0.5)
+  preload() { }
+
+  create() {
+    this.align.grid({ rows: 11, cols: 11, debug: true })
+
+    const btnStart = this.add.image(240, 320, 'button1')
+      .setInteractive()
+    this.align.vw(btnStart, 0.4)
+    this.align.placeAtIndex(btnStart, 93)
+
+    const title = this.add.image(240, 100, 'title')
+    this.align.vw(title, 0.8)
+    this.align.placeAtIndex(title, 38)
+
+
+    this.startGame()
+    // btnStart.on('pointerdown', this.startGame, this)
+
   }
+
   update() { }
+
+  startGame() {
+    this.scene.start(SceneKeys.MAIN)
+  }
 }
