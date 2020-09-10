@@ -932,6 +932,11 @@
   dependencies:
     source-map "^0.6.1"
 
+"@types/webfontloader@^1.6.32":
+  version "1.6.32"
+  resolved "https://registry.npm.taobao.org/@types/webfontloader/download/@types/webfontloader-1.6.32.tgz#8a02698b7a07a9f2cc8e34d7223dc5d59ccff77a"
+  integrity sha1-igJpi3oHqfLMjjTXIj3F1ZzP93o=
+
 "@types/webpack-sources@*":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-1.4.2.tgz#5d3d4dea04008a779a90135ff96fb5c0c9e6292c"
@@ -4251,10 +4256,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-phaser3-align-plugin@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/phaser3-align-plugin/-/phaser3-align-plugin-1.2.0.tgz#de0b0fdee2b7cf752f4707b808444410965cc211"
-  integrity sha512-QINb7Pt1IVakTVUjxfiATN9o3mxCJ3XL92ghZR1XCW2bQXXfpmU/RlJXXAA/ysdhGwl68u0Uu1LvRlWo6dj2HQ==
+phaser3-align-plugin@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npm.taobao.org/phaser3-align-plugin/download/phaser3-align-plugin-1.2.2.tgz#ca0b99613a7f62e3d407f2a14c5c1aa0debc98a9"
+  integrity sha1-yguZYTp/YuPUB/KhTFwaoN68mKk=
 
 phaser@^3.24.1:
   version "3.24.1"
@@ -5459,6 +5464,11 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.npm.taobao.org/webfontloader/download/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webpack-bundle-analyzer@^3.8.0:
   version "3.8.0"

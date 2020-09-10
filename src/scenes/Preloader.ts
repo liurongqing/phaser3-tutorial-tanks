@@ -1,3 +1,4 @@
+import WebFontLoader from '~/classes/WebFontFile'
 import { SceneKeys } from '~/consts/index'
 
 export default class Preloader extends Phaser.Scene {
@@ -11,6 +12,13 @@ export default class Preloader extends Phaser.Scene {
     this.load.image('tank1', 'assets/images/main/tank1.png')
     this.load.image('tank2', 'assets/images/main/tank2.png')
     this.load.image('smoke', 'assets/images/main/smoke.png')
+    this.load.image('bullet1', 'assets/images/main/bullet1.png')
+    this.load.image('bullet2', 'assets/images/main/bullet2.png')
+
+    const fonts = new WebFontLoader(this.load, [
+      'Fresca'
+    ])
+    this.load.addFile(fonts)
   }
   create() {
     this.scene.start(SceneKeys.GAME)
