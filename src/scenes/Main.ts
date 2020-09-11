@@ -28,6 +28,7 @@ export default class Main extends Phaser.Scene {
     this.makeRiver()
 
     this.placeTanks()
+
     this.setUpMessages()
 
     this.messageText = this.add.text(width * 0.5, height * 0.5, 'Message', {
@@ -43,13 +44,13 @@ export default class Main extends Phaser.Scene {
       callbackScope: this,
       loop: true
     })
+
     this.input.on('pointerdown', this.clicked, this)
 
   }
 
   setNextMessage() {
     const message = this.message.shift()
-    console.log('message', message)
     if (this.message.length === 0) {
       this.canFire = true
       this.messageTimer.remove(false)
@@ -70,10 +71,7 @@ export default class Main extends Phaser.Scene {
     this.showBullet(this.tank2, this.tank1)
   }
 
-
   clicked() {
-    // this.tankKit(this.tank1)
-    // this.showSmoke(this.tank1)
     if (this.canFire) {
       this.showBullet(this.tank1, this.tank2)
     } else {
@@ -99,7 +97,7 @@ export default class Main extends Phaser.Scene {
     const smoke = this.add.image(0, 0, 'smoke')
     this.align.vw(smoke, 0.2)
     let ty = 0
-    if (tank.y == this.tank1) {
+    if (tank == this.tank1) {
       console.log('tank1')
       this.align.placeAtIndex(smoke, 7)
       ty = this.scale.height
